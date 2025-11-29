@@ -1,0 +1,39 @@
+{
+  "email": "jabirali10033@gmail.com",
+  "passwordHash": "813b43428e61338108a01478605bcb28bc3c228ddaab18ba70871bff126c6948a6474dbf3607700d790849251c18f9dd456f3e18cef6ef02e2767052fcd7fff5",
+  "salt": "8d45b434be4a9cae4309dbf05dff3e34",
+  "role": "user",
+  "profile": {},
+  "goals": {},
+  "diet": [],
+  "appointments": [],
+  "progress": [
+    {
+      "id": "prog-1764314068819",
+      "weight": "45",
+      "steps": 6277,
+      "date": "3333-02-23"
+    },
+    {
+      "id": "prog-1764314108749",
+      "weight": "74",
+      "steps": 8746,
+      "date": "2024-11-23"
+    },
+    {
+      "id": "prog-1764314177503",
+      "weight": "75",
+      "steps": 8925,
+      "date": "2024-11-24"
+    }
+  ],
+  "reminders": [],
+  "analytics": [
+    {
+      "type": "auth",
+      "label": "register",
+      "timestamp": "2025-11-28T07:03:05.448Z"
+    }
+  ],
+  "createdAt": "2025-11-28T07:03:05.360Z"
+}

@@ -1,0 +1,14 @@
+{
+  "email": "alij1@gmail.com",
+  "passwordHash": "d7fa97e76ea5b54966a4b8a7d3aecef2d5e9e0714ed30ae49192dda5878061781551da1ec1a26919ae82179661b92574cdb7673c444367bd21deac05f084b5f5",
+  "salt": "9b152b43d1fecd6dc6e19ea08cd4c910",
+  "role": "user",
+  "profile": {},
+  "goals": {},
+  "diet": [],
+  "appointments": [],
+  "progress": [],
+  "reminders": [],
+  "analytics": [],
+  "createdAt": "2025-11-28T21:51:55.944Z"
+}

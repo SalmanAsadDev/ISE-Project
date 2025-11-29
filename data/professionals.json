@@ -1,0 +1,35 @@
+[
+  {
+    "id": "pro-1",
+    "name": "Downtown Strength Gym",
+    "type": "Gym",
+    "lat": 37.7749,
+    "lng": -122.4194,
+    "rating": 4.7,
+    "reviews": [
+      {
+        "user": "Jess",
+        "text": "Great coaches and community!"
+      }
+    ],
+    "contact": {
+      "phone": "+1-555-111-2222",
+      "email": "hello@downtownstrength.local",
+      "chatUrl": "/pages/chat.html#pro-1"
+    }
+  },
+  {
+    "id": "pro-2",
+    "name": "City Wellness Nutrition",
+    "type": "Nutritionist",
+    "lat": 37.7849,
+    "lng": -122.4094,
+    "rating": 4.4,
+    "reviews": [],
+    "contact": {
+      "phone": "+1-555-333-4444",
+      "email": "coach@citywellness.local",
+      "chatUrl": "/pages/chat.html#pro-2"
+    }
+  }
+]

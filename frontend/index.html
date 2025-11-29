@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Fitness Planner</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script defer src="/js/common.js"></script>
+    <script defer src="/js/landing.js"></script>
+  </head>
+  <body class="dark">
+    <header>
+      <div class="navbar">
+        <div class="logo">Local Fitness Planner</div>
+        <nav>
+          <a href="/pages/dashboard.html">Dashboard</a>
+          <a href="/pages/plans.html">Plans</a>
+          <a href="/pages/professionals.html">Professionals</a>
+          <a href="/pages/exercises.html">Exercises</a>
+          <a href="/pages/admin.html">Admin</a>
+          <button class="theme-toggle" data-theme-toggle>Theme</button>
+          <select class="lang-toggle" data-lang-select>
+            <option value="en">English</option>
+            <option value="es">Español (stub)</option>
+            <option value="xv">Fictional</option>
+          </select>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-card">
+        <div class="tag">Local-first · Private · Offline</div>
+        <h1>Design your training, nutrition, and accountability in one private workspace.</h1>
+        <p>Track diet, workouts, and progress with reminders, charts, and local pros. Everything lives on your device.</p>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:2rem;">
+          <a class="btn-primary" href="/pages/dashboard.html #profile">Open Dashboard</a>
+          <a class="btn-primary" href="/pages/plans.html">Plan Generator</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img src="/images/hero.png" alt="Athlete" />
+        <div class="stat">+42% weekly streaks when reminders are enabled</div>
+      </div>
+    </section>
+
+    <main>
+      <h2 class="page-title">Sign in or create an account</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>Create account</h3>
+          <form id="register-form">
+            <input type="email" name="email" placeholder="Email" required />
+            <input type="password" name="password" placeholder="Password" required />
+            <button type="submit">Register & Save Locally</button>
+          </form>
+        </div>
+        <div class="card">
+          <h3>Sign in</h3>
+          <form id="login-form">
+            <input type="email" name="email" placeholder="Email" required />
+            <input type="password" name="password" placeholder="Password" required />
+            <button type="submit">Access Workspace</button>
+          </form>
+        </div>
+      </div>
+
+      <section class="card">
+        <h3>Why local-first?</h3>
+        <div class="split">
+          <p>Every diet entry, workout, and note stays in `/data/` – easily export or delete whenever you choose. Browser notifications and geolocation work offline-friendly, and admin tooling lives locally.</p>
+          <div class="image-grid">
+            <img src="/images/workout.png" alt="Workout" />
+            <img src="/images/fuel.png" alt="Fuel" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="year"></span> Local Fitness Planner · <a href="/pages/help.html">Help & FAQ</a></p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Professionals • Local Fitness Planner</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script defer src="/js/common.js"></script>
+    <script defer src="/js/professionals.js"></script>
+  </head>
+  <body class="dark">
+    <header>
+      <div class="navbar">
+        <div class="logo">Professionals</div>
+        <nav>
+          <a href="/pages/dashboard.html">Dashboard</a>
+          <a href="/pages/plans.html">Plans</a>
+          <a class="active" href="/pages/professionals.html">Professionals</a>
+          <a href="/pages/exercises.html">Exercises</a>
+          <a href="/pages/admin.html">Admin</a>
+          <button data-signout>Sign out</button>
+          <button class="theme-toggle" data-theme-toggle>Theme</button>
+          <span class="user-chip" data-user-chip></span>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <h1 class="page-title">Find nearby experts</h1>
+      <section class="card-grid">
+        <div class="card">
+          <button id="detect-location">Detect location</button>
+          <p id="location-status" class="muted">Location unknown</p>
+        </div>
+        <div class="card">
+          <input type="search" id="professional-search" placeholder="Search by name or specialty" />
+        </div>
+      </section>
+
+      <section id="professional-list" class="card-grid"></section>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="year"></span> Local Fitness Planner</p>
+    </footer>
+  </body>
+</html>

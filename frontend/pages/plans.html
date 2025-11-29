@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plans • Local Fitness Planner</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script defer src="/js/common.js"></script>
+    <script defer src="/js/plans.js"></script>
+  </head>
+  <body class="dark">
+    <header>
+      <div class="navbar">
+        <div class="logo">Plans</div>
+        <nav>
+          <a href="/pages/dashboard.html">Dashboard</a>
+          <a class="active" href="/pages/plans.html">Plans</a>
+          <a href="/pages/professionals.html">Professionals</a>
+          <a href="/pages/exercises.html">Exercises</a>
+          <a href="/pages/admin.html">Admin</a>
+          <button data-signout>Sign out</button>
+          <button class="theme-toggle" data-theme-toggle>Theme</button>
+          <span class="user-chip" data-user-chip></span>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <h1 class="page-title">Meal & workout architect</h1>
+      <section class="card-grid">
+        <div class="card">
+          <h3>Generate</h3>
+          <div class="split">
+            <button id="generate-meal">Auto meal plan</button>
+            <button id="generate-workout">Auto workout plan</button>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Export / Import</h3>
+          <button id="export-plans">Export JSON</button>
+          <label class="badge" style="display:block;margin-top:1rem;">
+            Import file
+            <input type="file" id="import-plans" />
+          </label>
+        </div>
+        <div class="card">
+          <h3>Search</h3>
+          <input type="search" id="plan-search" placeholder="Search by goal or focus" />
+        </div>
+      </section>
+
+      <section class="card" id="plans-output"></section>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="year"></span> Local Fitness Planner</p>
+    </footer>
+  </body>
+</html>

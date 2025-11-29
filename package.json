@@ -1,0 +1,21 @@
+{
+  "name": "ise-project",
+  "version": "1.0.0",
+  "main": "backend/index.js",
+  "scripts": {
+    "start": "node backend/index.js",
+    "test": "mocha \"test/**/*.test.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Local-first fitness web app with JSON storage",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "mocha": "^11.7.5",
+    "supertest": "^7.1.4"
+  }
+}

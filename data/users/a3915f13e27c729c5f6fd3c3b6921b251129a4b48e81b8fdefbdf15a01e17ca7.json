@@ -1,0 +1,14 @@
+{
+  "email": "zainjabir1@gmail.com",
+  "passwordHash": "cc6bdc16c1e59b8e08ef6fb2f75afe6051b1d270528ac139c281abba6f1f518bbc166f0933696fad6efe0fd52490c7e516d226168db2e4baea2fef5516ac7004",
+  "salt": "8aa44abf939d7e122d92986baf3f36a5",
+  "role": "user",
+  "profile": {},
+  "goals": {},
+  "diet": [],
+  "appointments": [],
+  "progress": [],
+  "reminders": [],
+  "analytics": [],
+  "createdAt": "2025-11-28T21:33:41.297Z"
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard • Local Fitness Planner</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+    <script defer src="/js/common.js"></script>
+    <script defer src="/js/dashboard.js"></script>
+  </head>
+  <body class="dark">
+    <header>
+      <div class="navbar">
+        <div class="logo">Dashboard</div>
+        <nav>
+          <a class="active" href="/pages/dashboard.html">Dashboard</a>
+          <a href="/pages/plans.html">Plans</a>
+          <a href="/pages/professionals.html">Professionals</a>
+          <a href="/pages/exercises.html">Exercises</a>
+          <a href="/pages/admin.html">Admin</a>
+          <button data-signout>Sign out</button>
+          <button class="theme-toggle" data-theme-toggle>Theme</button>
+          <select class="lang-toggle" data-lang-select>
+            <option value="en">EN</option>
+            <option value="es">ES</option>
+          </select>
+          <span class="user-chip" data-user-chip></span>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <h1 class="page-title">Personal data hub</h1>
+      <section class="card-grid">
+        <div class="card">
+          <h2>Profile</h2>
+          <form id="profile-form">
+            <input name="name" placeholder="Name" />
+            <input name="age" type="number" placeholder="Age" />
+            <input name="gender" placeholder="Gender" />
+            <input name="height" placeholder="Height (cm)" />
+            <input name="weight" placeholder="Weight (kg)" />
+            <select name="activityLevel">
+              <option value="">Activity level</option>
+              <option value="light">Light</option>
+              <option value="moderate">Moderate</option>
+              <option value="intense">Intense</option>
+            </select>
+            <button type="submit">Save profile</button>
+          </form>
+        </div>
+        <div class="card">
+          <h2>Goals</h2>
+          <form id="goals-form">
+            <input name="goal" placeholder="Goal" />
+            <input name="calorieTarget" placeholder="Calories / day" />
+            <textarea name="notes" placeholder="Motivation notes"></textarea>
+            <button type="submit">Update goals</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="card-grid">
+        <div class="card">
+          <h3>Daily nutrition</h3>
+          <form id="diet-form">
+            <input name="meal" placeholder="Meal" required />
+            <input name="calories" type="number" placeholder="Calories" required />
+            <input name="notes" placeholder="Notes" />
+            <button type="submit">Add meal</button>
+          </form>
+          <ul id="diet-list" class="list"></ul>
+        </div>
+        <div class="card">
+          <h3>Appointments & reminders</h3>
+          <form id="appointment-form">
+            <input name="title" placeholder="Title" required />
+            <input name="datetime" type="datetime-local" required />
+            <input name="location" placeholder="Location" />
+            <button type="submit">Save appointment</button>
+          </form>
+          <form id="reminder-form">
+            <input name="message" placeholder="Reminder" required />
+            <input name="time" type="time" required />
+            <button type="submit">Push reminder</button>
+          </form>
+          <ul id="appointment-list" class="list"></ul>
+          <ul id="reminder-list" class="list"></ul>
+        </div>
+      </section>
+
+      <section class="card-grid">
+        <div class="card">
+          <h3>Progress</h3>
+          <form id="progress-form">
+            <input name="weight" type="number" placeholder="Weight" required />
+            <input name="date" type="date" />
+            <button type="submit">Log progress</button>
+          </form>
+          <canvas id="progress-chart" height="200"></canvas>
+        </div>
+        <div class="card">
+          <h3>Feedback & analytics</h3>
+          <form id="feedback-form">
+            <textarea name="message" placeholder="Share feedback" required></textarea>
+            <input name="rating" type="number" min="1" max="5" value="5" />
+            <button type="submit">Send feedback</button>
+          </form>
+          <h4>Recent analytics</h4>
+          <ul id="analytics-list" class="list"></ul>
+          <button id="delete-data" style="margin-top:1rem;background:#ef4444;">Delete all data</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="year"></span> Local Fitness Planner</p>
+    </footer>
+  </body>
+</html>

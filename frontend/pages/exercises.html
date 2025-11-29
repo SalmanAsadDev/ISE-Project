@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercises • Local Fitness Planner</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script defer src="/js/common.js"></script>
+    <script defer src="/js/exercises.js"></script>
+  </head>
+  <body class="dark">
+    <header>
+      <div class="navbar">
+        <div class="logo">Exercises</div>
+        <nav>
+          <a href="/pages/dashboard.html">Dashboard</a>
+          <a href="/pages/plans.html">Plans</a>
+          <a href="/pages/professionals.html">Professionals</a>
+          <a class="active" href="/pages/exercises.html">Exercises</a>
+          <a href="/pages/admin.html">Admin</a>
+          <button data-signout>Sign out</button>
+          <span class="user-chip" data-user-chip></span>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <h1 class="page-title">Exercise Library</h1>
+      <p style="text-align: center; margin-bottom: 2rem; opacity: 0.8;">
+        Browse exercises by muscle group. Each exercise includes detailed instructions and form tips.
+      </p>
+
+      <div id="exercise-filters" style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 2rem;">
+        <button class="filter-btn active" data-muscle="all">All</button>
+        <button class="filter-btn" data-muscle="arms">Arms</button>
+        <button class="filter-btn" data-muscle="legs">Legs</button>
+        <button class="filter-btn" data-muscle="chest">Chest</button>
+        <button class="filter-btn" data-muscle="abs">Abs</button>
+        <button class="filter-btn" data-muscle="back">Back</button>
+      </div>
+
+      <div id="exercises-container" class="card-grid"></div>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="year"></span> Local Fitness Planner</p>
+    </footer>
+  </body>
+</html>
+

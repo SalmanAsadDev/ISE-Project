@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin • Local Fitness Planner</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script defer src="/js/common.js"></script>
+    <script defer src="/js/admin.js"></script>
+  </head>
+  <body class="dark">
+    <header>
+      <div class="navbar">
+        <div class="logo">Admin Console</div>
+        <nav>
+          <a href="/pages/dashboard.html">Dashboard</a>
+          <a href="/pages/plans.html">Plans</a>
+          <a href="/pages/professionals.html">Professionals</a>
+          <a href="/pages/exercises.html">Exercises</a>
+          <a class="active" href="/pages/admin.html">Admin</a>
+          <button data-signout>Sign out</button>
+          <span class="user-chip" data-user-chip></span>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <h1 class="page-title">Manage professionals & accounts</h1>
+      <section class="card-grid">
+        <div class="card">
+          <h3>Add professional</h3>
+          <form id="add-professional-form">
+            <input name="name" placeholder="Name" required />
+            <input name="type" placeholder="Specialty" required />
+            <input name="lat" placeholder="Latitude" required />
+            <input name="lng" placeholder="Longitude" required />
+            <input name="phone" placeholder="Phone" />
+            <input name="email" placeholder="Email" />
+            <button type="submit">Add</button>
+          </form>
+        </div>
+        <div class="card">
+          <h3>Users</h3>
+          <ul id="admin-users" class="list"></ul>
+        </div>
+      </section>
+
+      <section class="card-grid">
+        <div class="card">
+          <h3>Professionals</h3>
+          <ul id="admin-professionals" class="list"></ul>
+        </div>
+        <div class="card">
+          <h3>Activity log</h3>
+          <ul id="admin-logs" class="list"></ul>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="year"></span> Local Fitness Planner</p>
+    </footer>
+  </body>
+</html>

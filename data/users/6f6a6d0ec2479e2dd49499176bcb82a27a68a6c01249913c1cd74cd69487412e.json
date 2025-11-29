@@ -1,0 +1,17 @@
+{
+  "email": "admin@local.test",
+  "role": "admin",
+  "passwordHash": "ffc76285f70419f9b71c04380f6d21f7d179ca5578528a296e40fa2acae1b48073f47beb4f1ed5d4ce38865f0d2782bfc4ac0ca8c596356ceec9f9db06aaaffa",
+  "salt": "c3ca5371980b0ee39d580e7ac227987a",
+  "profile": {
+    "name": "Site Admin",
+    "activityLevel": "moderate"
+  },
+  "goals": {},
+  "diet": [],
+  "appointments": [],
+  "progress": [],
+  "reminders": [],
+  "analytics": [],
+  "createdAt": "2025-11-28T06:58:37.464Z"
+}
